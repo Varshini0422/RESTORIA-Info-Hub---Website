@@ -29,6 +29,6 @@
 ```bash
 .
 ├── Restoria.html         # Main HTML file (Landing Page + All Sections)
-├── CSS.css               # Styling (linked in HTML as style.css)
-├── JavaScript.js         # Interactivity (linked as main.js)
+├── CSS.css               # Styling 
+├── JavaScript.js         # Interactivity 
 ├── images/               # Contains all referenced images (plate.jpeg, bir.jpg, etc.)
