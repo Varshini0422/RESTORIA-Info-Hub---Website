@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>Web Design Mastery | Burger House</title>
+</head>
+
+<body>
+  <!-----------------------HOME--------------------------------------------------------------------------->
+  <header>
+    <a href="#" class="logo"><i class="fa fa-utensils me-3">RESTORIA</i></a>
+    <ul class="nav__links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#special">SPECIAL</a></li>
+      <li><a href="#menu">MENU</a></li>
+      <li><a href="#event">EVENTS</a></li>
+      <li><a href="#contact">CONTACT US</a></li>
+      <li><button class="btnlogin-popup"><a href="#login">LOGIN</a></button></li>
+    </ul>
+  </header>
+  <section class="banner" id="home">
+    <div class="section__container header__container">
+      <div class="header__image">
+        <img src="plate.jpeg" alt="header" class="img" />
+      </div>
+      <div class="header__content">
+        <h1><span>ENJOY OUR</span><br>DELICIOUS MEAL</h1>
+        <h2>We believe that great food brings people together.<br>Step into a world where every meal is crafted with
+          passion, using the freshest ingredients and flavors that will tantalize your taste buds.
+          Whether you're in the mood for a hearty meal, light bites, or indulgent desserts, we have something to satisfy
+          every craving.<br>
+          <span>Taste the Difference. Savor the Moments.</span>
+        </h2>
+        <button class="btn" style=" width:180px;height:50px;"><a href="#login">BOOK MY TABLE</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------ABOUT----------------------------------------------------------------------------------------------------------->
+  <!---------------------------Login-----------------------------------------------------------------------------------------------------------
+  <section class="reservation section__container s" id="login">
+    <div class="section__container reservation__container">
+      <form action="/" class="reservation-form" onsubmit="return validateForm();">
+        <h2 class="section__header">LOGIN</h2><br>
+        <h4>Doesn't have an account yet?<a href="#reg">Sign Up</a></h4>
+        <label for="name">Username</label>
+        <input type="text" id="name" pattern="[A-Za-z\s]+" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" pattern="[A-Za-z0-9]{6}"required />
+
+        <button class="btn" type="submit"><a href="#book">LOGIN</a></button>
+        <button class="btn" type="submit"><a href="#reg">REGISTER</a></button>
+      </form>
+    </div>
+  </section>
+
+-->
+  <section class="reservation section__container s" id="auth-section">
+    <div class="auth-wrapper section__container">
+      <div class="login-div active section__container" id="login">
+      <h2>Login</h2>
+      <form action="#" class="reservation-form">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="input-box">
+          <input type="tel" id="number" placeholder="Enter your phone number" pattern="[0-9]{10}" required />
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email" required>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Create password" required>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Confirm password" required>
+        </div>
+        <div class="policy">
+          <input type="checkbox">
+          <h3>I accept all terms & condition</h3>
+        </div>
+        <div class="input-box">
+          <button class="btn" type="submit"><a href="#book">Login</a></button>
+        </div>
+        <div class="text">
+          <h3>Don't have an account? <a href="#" onclick="showRegistration()">Register now</a></h3>
+        </div>
+      </form>
+    </div>
+    <div class="register-div" id="register">
+      <h2>Registration</h2>
+      <form action="#" class="reservation-form">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="input-box">
+          <input type="tel" id="number" placeholder="Enter your phone number" pattern="[0-9]{10}" required />
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email" required>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Create password" required>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Confirm password" required>
+        </div>
+        <div class="policy">
+          <input type="checkbox">
+          <h3>I accept all terms & condition</h3>
+        </div>
+        <div class="input-box">
+          <button class="btn" type="submit"><a href="#book">Register Now</a></button>
+        </div>
+        <div class="text">
+          <h3>Already have an account? <a href="#" onclick="showLogin()">Login now</a></h3>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!---------------------------SPECIAL------------------------------------------------------------------------------->
+  <section class="section__container banner__container" id="special">
+    <div class="banner__card">
+      <p>TRY IT OUT TODAY</p>
+      <h4>MOST POPULAR THALI</h4>
+    </div>
+    <div class="banner__card">
+      <p>TRY IT OUT TODAY</p>
+      <h4>MORE FUN<br />MORE TASTE</h4>
+    </div>
+    <div class="banner__card">
+      <p>TRY IT OUT TODAY</p>
+      <h4>FRESH & CHILL</h4>
+    </div>
+  </section>
+  <!-----------------------------MENU------------------------------------------------------------------------------------->
+  <section class="section__container order__container" id="menu">
+    <h3>It's All About GOOD Food</h3>
+    <h2 class="section__header">CHOOSE & ENJOY</h2>
+    <p class="section__description">
+      Whether you crave comforting classics or bold new tastes, every meal at our restaurant is designed to delight your
+      senses.
+      Explore a variety of dishes crafted with fresh ingredients and rich flavors, perfect for any craving or occasion.
+      From hearty favorites to exciting new creations, there’s something on our menu for every palate.
+      Indulge, explore, and enjoy every bite as you create a dining experience that’s uniquely yours.
+    </p>
+    <div class="order__grid">
+      <div class="order__card">
+        <img src="bir.jpg" alt="order" />
+        <h4>BIRIYANI</h4>
+        <p class="p">
+          Sink your teeth into the timeless perfection of our Chicken Biriyani,
+          an experience that never goes out of style.
+        </p>
+        <button class="btn">ORDER NOW</button>
+      </div>
+      <div class="order__card">
+        <img src="veg.jpeg" alt="order" class="or" />
+        <h4>RICE BOWL</h4>
+        <p class="p">
+          Enjoy our Rice Bowl, where fluffy rice meets fresh veggies and savory proteins for a satisfying meal in every
+          bite.</p>
+        <button class="btn">ORDER NOW</button>
+      </div>
+      <div class="order__card">
+        <img src="chicken.jpeg" alt="order" class="or" />
+        <h4>STARTERS</h4>
+        <p class="p">
+          Enjoy our Savory Chicken Spring Rolls, packed with fresh vegetables and served with a zesty dipping sauce.
+        </p>
+        <button class="btn">ORDER NOW</button>
+      </div>
+    </div>
+
+    <div class="order__grid">
+      <div class="order__card">
+        <img src="ds.jpeg" alt="order" class="or" />
+        <h4>DESSERT</h4>
+        <p class="p">
+          Indulge in a symphony of delightful flavors with our Dessert Bliss, featuring a perfect blend of fruity and
+          creamy.
+        </p>
+        <button class="btn">ORDER NOW</button>
+      </div>
+      <div class="order__card">
+        <img src="burger.jpeg" alt="order" class="or" />
+        <h4>BURGER</h4>
+        <p class="p">
+          Enjoy our Teriyaki Chicken Burger, marinated in a sweet and savory glaze, served with crisp lettuce and tangy
+          mayo.
+        </p>
+        <button class="btn">ORDER NOW</button>
+      </div>
+      <div class="order__card">
+        <img src="glass.jpeg" alt="order" class="or" />
+        <h4>REFRESHMENTS</h4>
+        <p class="p">
+          A refreshing drink that combines zesty fruits with fizzy sparkling water for the perfect pick-me-up.
+        </p>
+        <button class="btn">ORDER NOW</button>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------EVENT------------------------------------------------------------------------------------------------------------>
+  <section class="section__container event__container" id="event">
+    <div class="event__content">
+      <div>
+        <img style="border-radius:50%;" src="bhog.jpeg" alt="event" class="img" />
+      </div>
+      <div class="event__details">
+        <h3>Discover</h3>
+        <h2 class="section__header">UPCOMING EVENTS</h2>
+        <p class="section__description">
+          From exclusive burger tastings and chef collaborations to community
+          outreach initiatives and seasonal celebrations, there's always
+          something special on the horizon at Burger Company. Be the first to
+          know about our upcoming events, promotions, and gatherings as we
+          continue to bring joy and flavor to our cherished customers. Join us
+          in creating memorable moments and delicious memories together!
+        </p>
+      </div>
+    </div>
+  </section>
+  <!---------------BOOK------------------------------------------------------------------------------------------------>
+  <section class="reservation section__container s" id="book">
+    <div class="section__container reservation__container">
+      <h3>RESERVATION</h3>
+      <h2 class="section__header">BOOK YOUR TABLE</h2>
+      <form action="/" class="reservation-form" onsubmit="return validateForm();">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" pattern="[A-Za-z\s]+" required />
+
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required />
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required />
+
+        <label for="time">Time</label>
+        <input type="time" id="time" required />
+
+        <label for="people">Number of People</label>
+        <input type="number" id="people" placeholder="Enter number of people" min="1" required />
+
+        <button class="btn" type="reset">CLEAR</button>
+        <button class="btn" type="submit">FIND TABLE</button>
+
+
+      </form>
+    </div>
+  </section>
+  <!--------------CONTACT------------------------------------------------------------------------------------------->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="roww">
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul class="ul">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#special">SPECIAL</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#event">EVENTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening</h4>
+          <p>MONDAY - SATURDAY<br>9:00AM - 9:00PM</p>
+          <br>
+          <p>SUNDAY<br>10:00AM - 8:00PM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js" defer></script>
+</body>
+
+</html>
